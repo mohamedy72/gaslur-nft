@@ -1,0 +1,87 @@
+/* ================ Variables ================ */
+:root {
+  /* Colors */
+  --primary-color: #fff;
+  --secondary-color: #1f1d2b;
+
+  --dark-grey: #bcbcbc;
+  /* Gradients */
+
+  --accent: linear-gradient(
+    103.91deg,
+    #9b51e0 21.01%,
+    rgba(48, 129, 237, 0.8) 100%
+  );
+
+  --main-gradient: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
+  --gradient-2: linear-gradient(
+    169.44deg,
+    rgba(58, 129, 191, 0.08) 1.85%,
+    rgba(65, 48, 90, 0.08) 98.72%
+  );
+
+  /* Borders */
+  --border-1: #d7d7d7;
+  /* fonts */
+  --font-family: "Poppins", sans-serif;
+  --line-height: 1.5;
+  --font-size: 1rem;
+}
+
+/* ================ Basic Reset ================ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================ Basic Styling ================ */
+body {
+  font-family: var(--font-family);
+  line-height: var(--line-height);
+  font-size: var(--font-size);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease-in-out;
+}
+a:hover {
+  background: var(--main-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+p {
+  width: 65ch;
+}
+
+section {
+  padding: 8.75rem 0;
+}
+
+.container {
+  width: calc(100vw - 80px);
+  margin: 0 auto;
+}
+
+.btn-group {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,23 @@
+.btn {
+  all: unset;
+  padding: 0.75rem 4.2188rem;
+  border-radius: 16px;
+  color: var(--primary-color);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background-image: var(--accent);
+}
+
+.btn-secondary {
+  border: 1px solid var(--border-1);
+}
+
+.btn-text {
+  color: var(--dark-grey);
+}
