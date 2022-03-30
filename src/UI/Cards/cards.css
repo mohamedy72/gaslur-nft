@@ -1,0 +1,57 @@
+.nft-card {
+  position: relative;
+  max-width: 31rem;
+  border-radius: 2.1875rem;
+  padding: 1.5rem 1.75rem;
+  border: 0.88px solid transparent;
+  background: var(--gradient-2);
+  z-index: 0;
+}
+
+.nft-card__img {
+  max-width: 27.8125rem;
+  height: 27.8125rem;
+  border-radius: 20px;
+  background: url("../../assets/imgs/nft-bg.jpg") no-repeat center center/cover;
+  margin-bottom: 2.0625rem;
+}
+
+.nft-card__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nft-card__details--owner {
+  display: flex;
+  align-items: center;
+}
+
+.nft-card__details--owner__info {
+  margin-left: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.nft-card__details--owner__info .name {
+  font-weight: 600;
+}
+.nft-card__details--owner__info .eth {
+  font-weight: 400;
+}
+.nft-card__details--stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.nft-card__details--stats__head {
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 3px;
+}
+
+.nft-card__details--stats__likes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  align-self: flex-end;
+}

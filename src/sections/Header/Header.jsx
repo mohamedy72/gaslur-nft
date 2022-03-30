@@ -2,9 +2,9 @@ import Button from "../../UI/Buttons/Button";
 import "./header.css";
 const Header = () => {
   return (
-    <header className="main-header">
-      <h1 className="logo">gaslur</h1>
-      <nav className="main-nav">
+    <header className="header">
+      <h1 className="header__logo">gaslur</h1>
+      <nav className="header__main-nav">
         <ul className="nav-list">
           <li className="nav-item">
             <a href="/" className="nav-item-link active">
@@ -29,7 +29,7 @@ const Header = () => {
         </ul>
       </nav>
 
-      <div className="btn-group">
+      <div className="header__btns btn-group">
         <Button variant="outlined" text="create" />
         <Button text="sign in" />
       </div>

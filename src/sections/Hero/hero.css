@@ -1,0 +1,38 @@
+.hero {
+  display: flex;
+  gap: 0 8.625rem;
+  align-items: center;
+}
+
+.hero__content {
+  flex: 1;
+  width: 50ch;
+}
+
+.hero__content--heading {
+  font-size: clamp(2rem, 1rem + 10vw, 4rem);
+  font-weight: 600;
+  line-height: 114%;
+  letter-spacing: -2px;
+}
+
+.hero__content--subheading {
+  width: 40ch;
+  margin: 1.5rem 0 2rem;
+  line-height: 150%;
+  color: var(--text-color);
+}
+
+.hero__content--btns {
+  gap: 0 2.5rem;
+}
+
+.hero__content--btns > .btn {
+  padding: 0.75rem 4.2188rem;
+}
+
+.hero__image {
+  flex: 1;
+  margin-right: auto;
+  align-self: center;
+}
