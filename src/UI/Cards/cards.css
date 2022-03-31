@@ -55,3 +55,61 @@
   gap: 8px;
   align-self: flex-end;
 }
+
+/* ==================== Bid Card ==================== */
+.sell-card {
+  display: flex;
+  flex-direction: column;
+}
+.sell-card__img {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.sell-card__img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.sell-card__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sell-card__info .name {
+  font-weight: 600;
+}
+
+.sell-card__info .eth {
+  font-weight: 500;
+}
+
+.line-break {
+  width: 100%;
+  height: 2px;
+  background-color: var(--light-grey);
+  margin: 1rem 0 1.5rem;
+}
+
+.sell-card__actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sell-card__actions--countdown {
+  color: var(--dark-grey);
+}
+.sell-card__actions--countdown .time {
+  color: var(--primary-color);
+  font-weight: 500;
+}
+
+.sell-card__actions .btn-secondary {
+  padding: 0.125rem 1.5rem;
+  text-transform: capitalize;
+  border-radius: 8px;
+}

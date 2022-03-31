@@ -1,0 +1,18 @@
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.step__icon {
+  width: 9.375rem;
+  height: 8.625rem;
+  margin-bottom: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.095);
+  display: grid;
+  place-items: center;
+  border-radius: 26px;
+  backdrop-filter: blur(74.43);
+  box-shadow: inset 2.01px -2.01px 20px 0 rgba(214, 214, 214, 0.17),
+    inset -3.01px 3.01px 3.01px rgba(255, 255, 255, 0.39);
+}

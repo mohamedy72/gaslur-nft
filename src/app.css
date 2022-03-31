@@ -5,7 +5,9 @@
   --secondary-color: #1f1d2b;
 
   --dark-grey: #bcbcbc;
+  --light-grey: #c4c4c4;
   --text-color: #e2e2e2;
+
   /* Gradients */
 
   --accent: linear-gradient(

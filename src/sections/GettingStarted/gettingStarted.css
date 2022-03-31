@@ -1,0 +1,39 @@
+.getting-started__header {
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.getting-started__header--text {
+  font-size: clamp(1.5rem, 1rem + 5vw, 3rem);
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+.getting-started__header--para {
+  font-size: 1.5rem;
+  color: var(--text-color);
+}
+
+.getting-started__steps {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 4rem 7.5rem;
+  justify-content: end;
+  text-align: center;
+}
+
+.getting-started__steps::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 53px;
+  background-image: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
+  filter: blur(200px);
+}
