@@ -36,3 +36,14 @@
   grid-template-columns: repeat(auto-fill, minmax(17.5rem, 1fr));
   gap: 1.8125rem;
 }
+@media screen and (max-width: 48em) {
+  .discover__header {
+    flex-direction: column;
+  }
+  .discover__header--filters {
+    margin-top: 1rem;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

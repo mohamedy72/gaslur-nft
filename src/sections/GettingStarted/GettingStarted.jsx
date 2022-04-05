@@ -6,7 +6,7 @@ import media from "../../assets/icons/file-media-24.png";
 import rocket from "../../assets/icons/rocket-24.png";
 const GettingStarted = () => {
   return (
-    <section className="getting-started">
+    <section className="getting-started" id="getting-started">
       <div className="getting-started__header">
         <h3 className="getting-started__header--text">Getting started</h3>
         <p className="getting-started__header--para">

@@ -3,7 +3,7 @@ import NFT_Card from "../../UI/Cards/NFT_Card";
 import "./hero.css";
 const Hero = () => {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
       <div className="hero__content">
         <h2 className="hero__content--heading">
           Discover, collect, and charity in extraordinary NFT marketplace

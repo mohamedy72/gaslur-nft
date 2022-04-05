@@ -24,7 +24,10 @@
   /* fonts */
   --font-family: "Poppins", sans-serif;
   --line-height: 1.5;
-  --font-size: 1rem;
+
+  --fs-600: 2.2rem;
+  --fs-500: 1.5rem;
+  --fs-400: 1rem;
 }
 
 /* ================ Basic Reset ================ */
@@ -40,9 +43,10 @@
 body {
   font-family: var(--font-family);
   line-height: var(--line-height);
-  font-size: var(--font-size);
+  font-size: var(--fs-400);
   background-color: var(--secondary-color);
   color: var(--primary-color);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -67,12 +71,29 @@ ul {
   list-style: none;
 }
 
-section, footer {
+section,
+footer {
   padding: 5rem 0;
 }
 
+h2 {
+  font-size: clamp(2.3rem, 1rem + 7vw, 4.3rem);
+  font-weight: 600;
+  line-height: 114%;
+  letter-spacing: -2px;
+}
+
+h3 {
+  font-size: clamp(1.75rem, 1rem + 4vw, 3rem);
+}
+
+h4 {
+  font-size: clamp(1.125rem, 1rem + 2vw, 2rem);
+}
+
 .container {
-  width: calc(100vw - 80px);
+  max-width: clamp(60rem, 100%, 100rem);
+  padding-inline: min(5vw, 5rem);
   margin: 0 auto;
 }
 
@@ -84,4 +105,11 @@ section, footer {
   height: 2px;
   background-color: var(--light-grey);
   margin: 1rem 0 1.5rem;
+}
+
+@media screen and (min-width: 40em) {
+  :root {
+    --fs-600: 2rem;
+    --fs-400: 1.125rem;
+  }
 }

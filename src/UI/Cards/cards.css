@@ -6,6 +6,7 @@
   border: 0.88px solid transparent;
   background: var(--gradient-2);
   z-index: 0;
+  margin-left: auto;
 }
 
 .nft-card__img {
@@ -87,7 +88,6 @@
   font-weight: 500;
 }
 
-
 .sell-card__actions {
   display: flex;
   justify-content: space-between;
@@ -106,4 +106,12 @@
   padding: 0.125rem 1.5rem;
   text-transform: capitalize;
   border-radius: 8px;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 67.5rem) {
+  .nft-card {
+    margin: 2rem 0;
+  }
 }

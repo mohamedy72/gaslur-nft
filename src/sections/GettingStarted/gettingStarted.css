@@ -37,3 +37,10 @@
   background-image: linear-gradient(93.51deg, #9b51e0 2.84%, #3081ed 99.18%);
   filter: blur(200px);
 }
+
+@media screen and (max-width: 40em) {
+  .getting-started__header--para {
+    font-size: 1.1rem;
+    text-align: center;
+  }
+}

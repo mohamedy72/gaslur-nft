@@ -24,8 +24,8 @@ const NFT_Card = () => {
           </div>
         </div>
         <div className="nft-card__details--stats">
-          <p className="nft-card__details--stats__head">We are here</p>
-          <p className="nft-card__details--stats__likes">
+          <span className="nft-card__details--stats__head">We are here</span>
+          <span className="nft-card__details--stats__likes">
             <svg
               onClick={handleLikes}
               width="24"
@@ -42,7 +42,7 @@ const NFT_Card = () => {
               />
             </svg>
             <span>{likes}</span>
-          </p>
+          </span>
         </div>
       </div>
     </div>

@@ -41,3 +41,17 @@
 .footer__copyright--social img {
   cursor: pointer;
 }
+
+@media screen and (max-width: 48em) {
+  .footer__nav {
+    flex-direction: column;
+  }
+
+  .footer__nav--heading {
+    margin-bottom: 3rem;
+  }
+
+  .footer__copyright {
+    flex-wrap: wrap;
+  }
+}

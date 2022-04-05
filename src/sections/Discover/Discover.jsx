@@ -9,7 +9,7 @@ import { NFTs } from "../../data/NFTs";
 
 const Discover = () => {
   return (
-    <section className="discover">
+    <section className="discover" id="discover">
       <div className="discover__header">
         <h3 className="discover__header--text">Discover</h3>
         <div className="discover__header--filters">
@@ -46,7 +46,6 @@ const Discover = () => {
       </div>
       <div className="discover__nfts">
         {NFTs.map((nft) => {
-          console.log(nft);
           return (
             <Sell_Card
               key={nft?.id}
