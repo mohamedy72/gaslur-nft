@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 import Button from "../Buttons/Button";
 import "./navigation.css";
 
-const Navigation = ({ className }) => {
+const Navigation = ({ className, navRef }) => {
   return (
-    <nav className={className}>
+    <nav ref={navRef} className={className}>
       <ul className="nav-list">
         <li className="nav-item">
           <NavLink to="/" className="nav-item-link ">

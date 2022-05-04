@@ -1,28 +1,30 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Navigation from "../Navigation/Navigation";
 import { AiOutlineClose } from "react-icons/ai";
 import { GiHamburgerMenu } from "react-icons/gi";
 import "./hamburger.css";
+import useBodyDismiss from "../../hooks/useBodyDismiss";
+
 const Hamburger = ({ className }) => {
   const [isOpen, setIsOpen] = useState(false);
-
-  const handleOpenHamburger = () => {
-    setIsOpen(true);
-  };
-
-  const handleClosingHamburger = () => {
-    setIsOpen(false);
-  };
+  const toggleMobileNav = () => setIsOpen(!isOpen);
+  const navRef = useRef(null);
+  useEffect(() => {
+    useBodyDismiss(navRef, setIsOpen);
+  }, [navRef]);
 
   return (
     <div className="hamburger">
       {isOpen ? (
-        <AiOutlineClose className="icon" onClick={handleClosingHamburger} />
+        <AiOutlineClose className="icon" onClick={toggleMobileNav} />
       ) : (
-        <GiHamburgerMenu onClick={handleOpenHamburger} className="icon" />
+        <GiHamburgerMenu className="icon" onClick={toggleMobileNav} />
       )}
       {isOpen && (
-        <Navigation className={`${className} ${isOpen ? "open" : "close"}`} />
+        <Navigation
+          navRef={navRef}
+          className={`${className} ${isOpen ? "open" : "close"}`}
+        />
       )}
     </div>
   );
