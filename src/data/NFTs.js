@@ -1,8 +1,10 @@
+import nft1 from "../assets/imgs/nft1.jpg";
+
 export const NFTs = [
   {
     id: 1,
     name: "NFT 1",
-    img: "./src/assets/imgs/nft1.jpg",
+    img: "../assets/imgs/nft1.jpg",
     price: 0.2,
     countDown: "01:25:33",
   },
